@@ -2,7 +2,7 @@
 We can use this small plugin to filter children in a container in realtime with a `.is-hidden` class.
 
 ## What it does
-When there is a keyup event on the searchInput it filters all the children in the container. It looks at all the text in the children and all the all tags. If there isn't a match with the value from the input the child element will get the `.is-hidden` class.
+When there is a keyup event on the searchInput it filters all the children in the container. It looks at all the text in the children aswell as all the alt tags. If there isn't a match with the value from the input the child element will get the `.is-hidden` class.
 
 ## Options
 | Option        | Default       | What it does                       |
