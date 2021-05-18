@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <style>
+        /*
+         * Global styling
+         */
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            min-height: 100%;
+            background-color: #fefefe;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*
+         * Articles (demo)
+         */
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        .articles__above {
+            padding: 10px;
+        }
+        .articles__article {
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 33.333%;
+            margin-bottom: 10px;
+        }
+        .articles__above h1 {
+            margin-top: 0;
+        }
+
+        .articles__article.is-hidden {
+            display: none;
+        }
+
+        .article {
+            padding: 10px;
+            border: 2px solid #fff;
+            height: 100%;
+        }
+
+        .container--examples {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container container--articles">
+        <div class="articles__above">
+            <h1>Articles</h1>
+            <div class="search">
+                <input type="text" placeholder="zoeken.." id="js-articles-search">
+            </div>
+        </div>
+        <div class="articles" id="js-articles">
+            <article class="articles__article">
+                <div class="article">
+                    <div class="article__type">
+                        Type 1
+                    </div>
+                    <div class="article__head">
+                        <h2 class="article__title">
+                            Title
+                        </h2>
+                    </div>
+                    <div class="article__media">
+                        <img src="https://via.placeholder.com/500x250/000000/FFFFFF/?text=Placeholder" alt="alt1">
+                    </div>
+                    <div class="article__summary">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="articles__article">
+                <div class="article">
+                    <div class="article__type">
+                        Type 2
+                    </div>
+                    <div class="article__head">
+                        <h2 class="article__title">
+                            Title 2
+                        </h2>
+                    </div>
+                    <div class="article__media">
+                        <img src="https://via.placeholder.com/500x250/000000/FFFFFF/?text=Placeholder" alt="alt2">
+                    </div>
+                    <div class="article__summary">
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="articles__article">
+                <div class="article">
+                    <div class="article__type">
+                        Type 3
+                    </div>
+                    <div class="article__head">
+                        <h2 class="article__title">
+                            Title 3
+                        </h2>
+                    </div>
+                    <div class="article__media">
+                        <img src="https://via.placeholder.com/500x250/000000/FFFFFF/?text=Placeholder" alt="alt3">
+                    </div>
+                    <div class="article__summary">
+                        <p>
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                            pain was born and I will give you a complete account of the system, and expound the actual
+                            teachings of the great explorer of the truth, the master-builder of human happiness.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="articles__article">
+                <div class="article">
+                    <div class="article__type">
+                        Type 4
+                    </div>
+                    <div class="article__head">
+                        <h2 class="article__title">
+                            Title 4
+                        </h2>
+                    </div>
+                    <div class="article__media">
+                        <img src="https://via.placeholder.com/500x250/000000/FFFFFF/?text=Placeholder" alt="alt4">
+                    </div>
+                    <div class="article__summary">
+                        <p>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="articles__article">
+                <div class="article">
+                    <div class="article__type">
+                        Type 5
+                    </div>
+                    <div class="article__head">
+                        <h2 class="article__title">
+                            Title 5
+                        </h2>
+                    </div>
+                    <div class="article__media">
+                        <img src="https://via.placeholder.com/500x250/000000/FFFFFF/?text=Placeholder" alt="alt5">
+                    </div>
+                    <div class="article__summary">
+                        <p>
+                            On the other hand, we denounce with righteous indignation and dislike men who are so
+                            beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that
+                            they cannot foresee the pain and trouble that are bound to ensue.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <script src="/articleSearch.js"></script>
+    <script>
+        // Init articleSearch
+        articleSearch.init({
+            container: document.getElementById('js-articles'),
+            searchInput: document.getElementById('js-articles-search'),
+        });
+    </script>
+</body>
+
+</html>
